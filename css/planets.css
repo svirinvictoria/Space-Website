@@ -6,9 +6,10 @@ body {
   display: flex;
   align-items: space-around;
   justify-items: space-between;
-  padding-top: 2rem;
+  margin: 2rem 5rem;
+  /* padding-top: 2rem;
   padding-bottom: 10rem;
-  padding-right: 12rem;
+  padding-right: 12rem; */
 }
 
 aside.left {
@@ -18,14 +19,14 @@ aside.left {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-left: 5rem;
+  
 }
 .img-europa {
   width: 100%;
 }
 
 aside.right {
-  padding: 4rem 6rem;
+  margin: 4rem 6rem 4rem 3.5rem;
   display: flex;
   flex-direction: column;
   flex: 1 1 50%;
@@ -37,7 +38,6 @@ aside.right {
 }
 .travel_info {
   display: flex;
-  /* background-color: rgb(196, 61, 61); */
   margin-top: 5rem;
   font-size: 1.8rem;
 }
@@ -50,12 +50,29 @@ div p {
   margin: 0;
 }
 
-@media screen and (max-width: 1168px) {
+
+/*Adaptation - Smaller screens*/
+@media screen and (max-width: 1280px) {
+  body {
+   margin: 4rem 6rem;
+  padding: 0;
+  }
+  
+  
+aside.right {
+  margin-right: 3rem;
+  }
+ .travel_info {
+   /* margin-left: 3rem; */
+}
+}
+/*Adaptation - Tablet*/
+@media screen and (max-width: 960px) {
   .middle_container {
     display: block;
   }
-
   .img-europa {
     margin-top: 5rem;
   }
 }
+/*Adaptation - Mobile*/
