@@ -2,6 +2,42 @@ body {
   width: 90%;
   background-image: url(../images/destination/background-destination-desktop.jpg);
 }
+/* fonts */
+h1 {
+  font-size: 9rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h5 {
+  font-size: 2.8rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding: 0;
+  margin: 0;
+}
+
+h6 {
+  font-size: 2.2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  letter-spacing: 5px;
+  padding: 0;
+  margin-right: 3rem;
+}
 
 .middle_container {
   display: flex;
@@ -18,7 +54,6 @@ aside.left {
   justify-content: space-around;
 }
 .img-europa {
-  width: 100%;
   margin-top: 3rem;
 }
 
@@ -54,6 +89,18 @@ aside.right {
 div p {
   padding: 0;
   margin: 0;
+}
+/* text */
+.text {
+  line-height: 1.5;
+  word-spacing: 3px;
+  font-size: 1.5rem;
+  width: 85%;
+  text-align: justify;
+}
+
+.underlined {
+  text-decoration: underline;
 }
 
 /*Adaptation - Smaller screens*/

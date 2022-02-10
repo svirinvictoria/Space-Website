@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.svg" />
-    <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="/css/shared.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <!-- <link rel="stylesheet" href="../css/planets.css"> -->
+    <link rel="stylesheet" href="../css/shared.css" />
+    <link rel="stylesheet" href="../css/crew.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +28,6 @@
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    <!-- upper container -->
     <div class="upper_container">
       <div class="logo">
         <img src="/images/logo.svg" alt="logo" />
@@ -33,12 +38,16 @@
       <nav class="nav_menue">
         <ul class="nav_menue_item">
           <li>
-            <a class="item_link" href="/index.html"> <span>00 </span> Home</a>
+            <a class="item_link" href="../index.html"> <span>00 </span> Home</a>
           </li>
           <li>
-            <a class="item_link" href="#"><span>01 </span>Destination</a>
+            <a class="item_link" href="#"> <span>01 </span>Destination</a>
             <ul class="secondary_menu">
-              <li><a class="item_link" href="#">Moon</a></li>
+              <li>
+                <a class="item_link" href="/site-pages/destination-moon.html"
+                  >Moon</a
+                >
+              </li>
               <li>
                 <a class="item_link" href="/site-pages/destination-mars.html"
                   >Mars</a
@@ -49,7 +58,11 @@
                   Europa
                 </a>
               </li>
-              <li><a class="item_link" href="#">Titan</a></li>
+              <li>
+                <a class="item_link" href="/site-pages/destination-titan.html"
+                  >Titan</a
+                >
+              </li>
             </ul>
           </li>
           <li>
@@ -84,21 +97,46 @@
       </nav>
     </div>
 
+    <!-- middle container -->
     <div class="middle_container">
-      <div class="left_part">
-        <h4>So, you want to travel to</h4>
-        <h1>Space</h1>
-        <p class="text">
-          Let's face it; if you want to go to space, you might as well genuinely
-          go to outer space and not hover kind of on the edge of it. Well sit
-          back, and relax because we'll give you a truly out of this world
-          experience!
-        </p>
-      </div>
+      <!-- left part -->
+      <aside class="left">
+        <div class="section_name">
+          <h4><span class="selection_name_code">02</span> Meet your crew</h4>
+        </div>
+        <div class="job">
+          <h2>Commander</h2>
+        </div>
+        <div class="name">
+          <h1>Douglas Hurley</h1>
+        </div>
 
-      <div class="right_part">
-        <p class="explore_text">Explore</p>
-      </div>
+        <p class="text">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps
+          pilot and former NASA astronaut. He launched into space for the third
+          time as commander of Crew Dragon Demo-2.
+        </p>
+
+        <div class="selected">
+          <div class="selectedSubMenu"></div>
+          <a href="/site-pages/crew-pilot.html">
+            <div class="unselectedSubMenu"></div>
+          </a>
+          <a href="/site-pages/crew-engineer.html">
+            <div class="unselectedSubMenu"></div>
+          </a>
+          <a href="/site-pages/crew-specialist.html">
+            <div class="unselectedSubMenu"></div>
+          </a>
+        </div>
+
+        <!-- right part -->
+      </aside>
+      <aside class="right">
+        <div class="img_frame">
+          <img src="../images/crew/image-douglas-hurley.png" alt="Hurley" />
+        </div>
+      </aside>
     </div>
   </body>
 </html>
