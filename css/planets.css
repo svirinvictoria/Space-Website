@@ -1,6 +1,6 @@
 body {
   width: 90%;
-  background-image: url(/images/destination/background-destination-desktop.jpg);
+  background-image: url(../images/destination/background-destination-desktop.jpg);
 }
 
 .middle_container {
@@ -16,9 +16,13 @@ aside.left {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
 }
 .img-europa {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.img-mars {
   width: 100%;
   margin-top: 3rem;
 }
@@ -36,7 +40,7 @@ aside.right {
   width: 75%;
   align-self: center;
   display: flex;
-  justify-content: space-evenly ;
+  justify-content: space-evenly;
 }
 .travel_info {
   display: flex;
@@ -52,19 +56,18 @@ div p {
   margin: 0;
 }
 
-
 /*Adaptation - Smaller screens*/
 @media screen and (max-width: 1280px) {
-body {
-  margin: 4rem 6rem;
-  padding: 0;
+  body {
+    margin: 4rem 6rem;
+    padding: 0;
   }
-aside.right {
-  margin-right: 3rem;
+  aside.right {
+    margin-right: 3rem;
   }
- .travel_info {
-  font-size: 1.4rem;
-}
+  .travel_info {
+    font-size: 1.4rem;
+  }
 }
 /*Adaptation - Tablet*/
 @media screen and (max-width: 960px) {
@@ -89,36 +92,34 @@ aside.right {
   }
 
   aside.left {
-    align-items:center
+    align-items: center;
   }
   aside.right {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0;
-  margin: 0 1rem;
-}
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    margin: 0 1rem;
+  }
 
-.pick {
-  padding: 0;
-  display: flex;
-  width: 50%;
-  
-}
- .travel_info {
-  font-size: 1rem;
-   margin-top: 2rem;
-   margin-bottom: 5rem;
-   width: 100%;
-   justify-content:space-around;
-}
+  .pick {
+    padding: 0;
+    display: flex;
+    width: 50%;
+  }
+  .travel_info {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    justify-content: space-around;
+  }
 
-p{
-  font-size: 0.8rem;
-}
-.time {
-  margin-left: 1.1rem;
-}
-
+  p {
+    font-size: 0.8rem;
+  }
+  .time {
+    margin-left: 1.1rem;
+  }
 }
