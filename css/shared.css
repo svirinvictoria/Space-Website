@@ -13,6 +13,10 @@ body {
   letter-spacing: 2px;
 }
 
+.mobile_menu_panel {
+  display: none;
+}
+
 .menu_item {
   display: none;
 }
@@ -45,7 +49,7 @@ span {
 .upper_container {
   display: flex;
   align-items: center;
-  /* padding: 3rem 0 0 3rem; */
+  padding: 3rem 0 0 3rem;
   height: 6rem;
 }
 .nav_menue {
@@ -119,15 +123,6 @@ nav ul ul li {
   html {
     margin: 0;
     padding: 0;
-  }
-
-  .show {
-    transition: all 0.5s ease-out;
-    width: 70%;
-  }
-  .hide {
-    transition: all 0.5s ease-out;
-    width: 0%;
   }
 
   body {
@@ -205,9 +200,25 @@ nav ul ul li {
     opacity: 0.85;
     top: 0;
     right: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
   }
-  
-  .mob_menu{
+
+  .show {
+    display: flex;
+    transition: all 0.5s ease-out;
+    width: 70%;
+  }
+  .hide {
+    display: none;
+    transition: all 0.5s ease-out;
+    width: 0%;
+  }
+
+  .mob_menu {
+    width: 100%;
     margin-top: 6rem;
   }
 
@@ -216,33 +227,33 @@ nav ul ul li {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-     color:white;
-     font-size: 1rem;
-     line-height: 2.3rem;
-     letter-spacing: 2.7px;
-     text-transform: uppercase;
-     text-decoration: none;
-     list-style-type: none;
+    color: white;
+    font-size: 1rem;
+    line-height: 2.3rem;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
   }
 
   li span {
     margin-right: 0.3rem;
   }
-  .item_link{
+  .item_link {
     display: flex;
+    opacity: 1;
   }
 
-  .mmp_btn{
+  .mmp_btn {
     width: 2rem;
     height: 2rem;
     background-color: transparent;
     border: none;
     color: white;
     font-size: 1.8rem;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.8rem;
-
+    margin-top: 1.5rem;
+    margin-right: 1.7rem;
+    cursor: pointer;
   }
 
   /*text*/
