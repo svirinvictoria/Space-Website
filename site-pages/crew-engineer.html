@@ -1,27 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <!-- <link rel="stylesheet" href="../css/planets.css"> -->
+    <link rel="stylesheet" href="../css/shared.css" />
+    <link rel="stylesheet" href="../css/crew.css" />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
 
-  02 Meet your crew
 
-  Flight Engineer
-  Anousheh Ansari
+  <body>
 
-  Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+    <div class="upper_container">
+      <div class="logo">
+        <img src="/images/logo.svg" alt="logo" />
+      </div>
+      <hr class="central" />
+
+      <!-- hamburger menu -->
+      <div id="menu_item_mob" class="menu_item" onclick="changeMenu(true)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <!-- main menu -->
+       <nav class="nav_menue">
+        <ul class="nav_menue_item">
+          <li>
+            <a class="item_link" href="/index.html"> <span>00 </span> Home</a>
+          </li>
+          <li>
+            <a class="item_link" href="/site-pages/destination-moon.html"><span>01 </span>Destination</a>
+          </li>
+         
+          <li>
+            <a class="item_link" href="/site-pages/crew-commander.html"
+              ><span>02 </span> Crew</a>   
+          </li>
+              
+          <li>
+            <a class="item_link" href="/site-pages/technology-vehicle.html"><span>03 </span> Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- middle container -->
+    <div class="middle_container">
+      <!-- left part -->
+      <aside class="left">
+        <div class="section_name">
+          <h4><span class="selection_name_code">02</span> Meet your crew</h4>
+        </div>
+        <div class="job">
+          <h2> Flight Engineer</h2>
+        </div>
+        <div class="name">
+          <h1>Anousheh Ansari</h1>
+        </div>
+
+        <p class="text">
+          Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
   Ansari was the fourth self-funded space tourist, the first self-funded woman to 
   fly to the ISS, and the first Iranian in space. 
-</body>
+        </p>
+
+        <div class="selected">
+          <div class="selectedSubMenu"></div>
+          <a href="/site-pages/crew-pilot.html">
+            <div class="unselectedSubMenu"></div>
+          </a>
+          <a href="/site-pages/crew-engineer.html">
+            <div class="unselectedSubMenu"></div>
+          </a>
+          <a href="/site-pages/crew-specialist.html">
+            <div class="unselectedSubMenu"></div>
+          </a>
+        </div>
+
+        <!-- right part -->
+      </aside>
+      <aside class="right">
+        <div class="img_frame">
+          <img src="../images/crew/image-anousheh-ansari.png" alt="Anousheh Ansari" />
+        </div>
+      </aside>
+    </div>
+
+    <div id="mmp" class="mobile_menu_panel">
+      <button class="mmp_btn" onclick="changeMenu(false)">X</button>
+
+      <!-- mobile menu -->
+      <nav class="mob_menu">
+        <ul class="mob_menu_item">
+          <li>
+            <a class="item_link" href="../index.html">
+              <span> 00 </span> Home</a
+            >
+          </li>
+          <li>
+            <a class="item_link" href="/site-pages/destination-moon.html">
+              <span> 01 </span>Destination</a
+            >
+          </li>
+          <li>
+            <a class="item_link" href="/site-pages/crew-commander.html"
+              ><span> 02 </span> Crew</a
+            >
+          </li>
+          <li>
+            <a class="item_link" href="#"><span> 03 </span> Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script>
+      function changeMenu(toShow) {
+        if (toShow) {
+          document.getElementById("menu_item_mob").style.display = "none";
+        } else {
+          document.getElementById("menu_item_mob").style.display = "block";
+        }
+        const element = document.getElementById("mmp");
+        element.classList.remove("show", "hide");
+        const className = toShow ? "show" : "hide";
+        element.classList.add(className);
+      }
+    </script>
+  </body>
 </html>

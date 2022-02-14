@@ -13,6 +13,7 @@ body {
   letter-spacing: 2px;
 }
 
+/*mobile menu*/
 .mobile_menu_panel {
   display: none;
 }
@@ -154,7 +155,7 @@ nav ul ul li {
     position: absolute;
     bottom: 0.1rem;
     left: 0;
-    width: 100%;
+    width: 78%;
     font-size: 0.9rem;
     padding: 0.1rem 0;
   }
@@ -260,7 +261,7 @@ nav ul ul li {
   .text {
     line-height: 1.3rem;
     word-spacing: 2px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-top: 2rem;
     width: 100%;
   }
