@@ -9,17 +9,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: aliceblue;
-  font-family: "Barlow Condensed", sans-serif;
-  letter-spacing: 2px;
-}
-
-/*mobile menu*/
-.mobile_menu_panel {
-  display: none;
-}
-
-.menu_item {
-  display: none;
 }
 
 /* links */
@@ -34,8 +23,9 @@ a:hover {
 }
 
 /* upper container && navigation menu */
-hr {
-  background-color: rgba(71, 63, 63, 0.396);
+hr{
+  background-color: white;
+  opacity: 0.25;
   border: none;
   height: 2px;
   flex-basis: 45%;
@@ -57,8 +47,12 @@ span {
   width: 65%;
   background-color: rgb(128, 128, 128, 0.2);
   color: aliceblue;
-  font-size: 1.6rem;
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  line-height: 1.2;
   padding: 0.7rem 0;
+  text-transform: uppercase;
+  font-family: "Barlow condensed", serif;
 }
 
 .nav_menue_item {
@@ -85,22 +79,110 @@ nav ul ul li {
   top: 0px;
 }
 
+/*mobile menu*/
+.mobile_menu_panel {
+  display: none;
+}
+
+.menu_item {
+  display: none;
+}
+
+/*Fonts && text*/
+/*biggest heading*/
+h1 {
+  font-size: 9.3rem;
+  
+}
+/*smaller heading*/
+h2 {
+  font-size: 6.2rem;
+  
+}
+/*mobile heading*/
+h3 {
+  font-size: 3.5rem;
+}
+h4 {
+  font-size: 2rem;
+ 
+}
+/*heading in the text*/
+h5 {
+  font-size: 1.75rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  line-height: 2.1;
+  letter-spacing: 4.75px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.typo{
+ font-family: "Bellefair", serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0;
+}
+/*subheadings*/
+
+p.subheading_1 {
+  font-size: 0.9rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2.35px;
+  line-height: 1.1rem;
+  text-transform: uppercase;
+  padding: 0 0 0.8rem 0;
+}
+
+p.subheading_2 {
+  font-size: 1.75rem;
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  padding: 0;
+  line-height: 2rem;
+  text-transform: uppercase;
+  /* margin-right: 3rem; */
+}
+
+ p.text {
+  font-family:"Barlow", sans-serif;
+  line-height: 178%;
+  font-size: 1.2rem;
+   width: 90%;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+
 /*Adaptation - Tablet*/
 @media screen and (max-width: 1024px) {
+  .upper_container {
+    padding: 0;
+  }
   .logo {
     position: absolute;
     top: 1.5rem;
     left: 2rem;
   }
   .nav_menue {
+    height: 4rem;
     width: 62%;
-    font-size: 1.4rem;
+    padding-top: 1.3rem;
+
+    font-size: 0.9rem;
+    letter-spacing: 2.36px;
+    line-height: 1.1rem;
+    text-transform: uppercase;
+
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 0.9rem;
-    line-height: 1rem;
-    text-transform: uppercase;
+    
     display: block;
   }
   nav span {
@@ -111,12 +193,36 @@ nav ul ul li {
     display: none;
   }
 
-  .text {
-    line-height: 1.3;
-    word-spacing: 3px;
-    font-size: 1.3rem;
+  p.text {
+    /* background-color:aqua; */
+    line-height: 1.75;
+    font-size: 1rem;
+    width: 55%;
+    text-align: center;
+    margin-top: 2rem;
+
+  } 
+ 
+
+  h1 {
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1.5rem;
     width: 90%;
   }
+
+  h5 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: 3.38px;
+  margin-bottom: 2rem;}
+
+  p.subheading_1 {
+    font-size: 1.5rem;
+  } 
+
 }
 
 /*Adaptaion- Mobile*/
@@ -131,33 +237,30 @@ nav ul ul li {
   }
 
   h1 {
-    font-size: 3rem;
-    width: 90%;
+    font-size: 5rem;
+    line-height: 6.25rem;
+    margin-bottom: 1rem;
   }
 
   h4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 2.7px;
   }
 
   h5 {
     font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
 
-  h6 {
+  /* h6 {
     font-size: 1rem;
     margin-right: 0.5rem;
-  }
+  } */
 
   /*menu*/
   .nav_menue {
-    position: absolute;
-    bottom: 0.1rem;
-    left: 0;
-    width: 78%;
-    font-size: 0.9rem;
-    padding: 0.1rem 0;
+    display: none;
   }
 
   span {
@@ -258,11 +361,12 @@ nav ul ul li {
   }
 
   /*text*/
-  .text {
-    line-height: 1.3rem;
+  p.text {
+    line-height: 1.6rem;
     word-spacing: 2px;
-    font-size: 0.9rem;
-    margin-top: 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
     width: 100%;
+    
   }
 }
