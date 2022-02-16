@@ -23,7 +23,7 @@ a:hover {
 }
 
 /* upper container && navigation menu */
-hr{
+hr.upper_menu{
   background-color: white;
   opacity: 0.25;
   border: none;
@@ -151,7 +151,7 @@ p.subheading_2 {
   font-family:"Barlow", sans-serif;
   line-height: 178%;
   font-size: 1.2rem;
-   width: 90%;
+   /* width: 90%; */
 }
 
 .underlined {
@@ -189,22 +189,22 @@ p.subheading_2 {
     display: none;
   }
 
-  hr.central {
+  hr.upper_menu {
     display: none;
   }
 
   p.text {
-    /* background-color:aqua; */
     line-height: 1.75;
     font-size: 1rem;
     width: 55%;
     text-align: center;
-    margin-top: 2rem;
-
   } 
  
 
   h1 {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 5.7rem;
     text-align: center;
   }
 
@@ -237,9 +237,10 @@ p.subheading_2 {
   }
 
   h1 {
-    font-size: 5rem;
-    line-height: 6.25rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   h4 {
@@ -250,13 +251,10 @@ p.subheading_2 {
 
   h5 {
     font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 2.7px;
     margin-bottom: 1.5rem;
   }
-
-  /* h6 {
-    font-size: 1rem;
-    margin-right: 0.5rem;
-  } */
 
   /*menu*/
   .nav_menue {
@@ -297,6 +295,10 @@ p.subheading_2 {
   /* mobile menu */
 
   .mobile_menu_panel {
+    font-family: "Barlow Condensed";
+    text-transform: capitalize;
+    font-size: 1rem;
+    line-height: 1.2rem;
     position: absolute;
     width: 70%;
     height: 100%;
@@ -360,13 +362,16 @@ p.subheading_2 {
     cursor: pointer;
   }
 
+  
   /*text*/
   p.text {
     line-height: 1.6rem;
     word-spacing: 2px;
     font-size: 1rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     width: 100%;
-    
+  }
+  .typo{
+    width: 100%;
   }
 }

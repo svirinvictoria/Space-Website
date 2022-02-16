@@ -18,7 +18,6 @@ aside.left {
 h5 span {
   opacity: 0.25;
   padding: 0 0 1.75rem 0 rem;
-  
 }
 
 .img-data {
@@ -38,7 +37,7 @@ aside.right {
 }
 
 .pick {
-  width: 70%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
   justify-self: flex-start;
@@ -51,10 +50,21 @@ aside.right {
   padding-bottom: 2.3rem;
 }
 
+p.text_planets{
+  width: 70%;
+}
 
+hr.planet_info{
+  background-color:white;
+  border: 1 solid white;
+  opacity: 0.25;
+  width: 80%;
+  margin-top: 3rem;
+  margin-right: 9rem;
+}
 .travel_info {
   display: flex;
-  margin-top: 5rem;
+  margin-top: 3rem;
   font-size: 1.8rem;
 }
 .time {
@@ -65,35 +75,76 @@ div p {
   padding: 0;
   margin: 0;
 }
-/* text see shared.css*/
+/* text -  see shared.css*/
 
-.underlined {
-  text-decoration: underline;
-}
 
-/*Adaptation - Smaller screens*/
+/*Adaptation - Tablet*/
 @media screen and (max-width: 1024px) {
   body {
     margin: 4rem 6rem;
     padding: 0;
   }
+  aside.left {
+    margin-left: 2.4rem;
+    margin-top: 2.5rem;
+    padding: 0;
+    width: 100%;
+  }
   aside.right {
-    margin-right: 3rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pick{
+    width: 37%;
   }
   .travel_info {
     font-size: 1.4rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center
+
+  }
+  .time{
+    margin: 0;
   }
   
-
-/*Adaptation - Tablet*/
-@media screen and (max-width: 960px) {
-  .middle_container {
-    display: block;
+  hr.planet_info {
+    margin-left: 6.1rem;
+    margin-right: 6.1rem;
   }
+  .middle_container {
+    flex-direction: column;
+    align-items:center
+
+  }
+  
+  /*image*/
   .img-data {
-    padding-top: 6rem;
-    height: 27rem;
-    width: 27rem;
+    padding: 0;
+    margin:  2.3rem auto 3.3rem auto;
+    height: 18.7rem;
+    width: 18.7rem;
+  }
+
+  img.img-planet{
+   height: 18.7rem;
+    width: 18.7rem;
+  }
+  /*time && distance*/
+  p.subheading_1{
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+    letter-spacing: 2.36px;
+  }
+  p.subheading_2{
+    font-size: 1.75rem;
+    line-height: 2rem;
+    letter-spacing: 2.36px;
+    margin-bottom: 3.9rem;
   }
 }
 /*Adaptaion- Mobile*/
@@ -104,38 +155,73 @@ div p {
   }
 
   .middle_container {
-    margin: 1rem;
+    margin: 1.5rem;
+    flex-direction: column;
   }
 
   aside.left {
     align-items: center;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  /*image*/
+  .img-data{
+    margin: 0;
+    padding-bottom: 1.6rem;
+    height: 10.5rem;
+    width: 10.5rem;
+
+  }
+
+  img.img-planet{
+    height: 10.6rem;
+    width: 10.6rem;
   }
   aside.right {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
     padding: 0;
-    margin: 0 1rem;
+    margin: 0;
   }
+
+  .choose_planet {
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  letter-spacing: 2.36px;
+  padding-bottom: 1.2rem;
+}
 
   .pick {
     padding: 0;
     display: flex;
-    width: 50%;
+    width: 63%;
   }
-  .travel_info {
-    font-size: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    width: 100%;
-    justify-content: space-around;
+  p.text_planets{
+    margin: 0;
+    padding: 0;
   }
 
-  p {
-    font-size: 0.8rem;
+  hr.planet_info {
+    width: 95%;
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-right: 0;
   }
+  .travel_info { 
+    margin-top: 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+  
   .time {
-    margin-left: 1.1rem;
+    margin-left: 0rem;
+    margin-bottom:0;
+  }
+  p.subheading_2{
+    margin-bottom: 2rem;
   }
 }

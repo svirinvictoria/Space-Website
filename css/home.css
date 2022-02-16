@@ -38,7 +38,9 @@ body {
 }
 /* fonts - see shared.css */
 /* text - see shared.css */
-
+.text_home {
+  width: 90%;
+}
 
   /*Adaptation- Tablet*/
 @media screen and (max-width: 1024px) {
@@ -69,6 +71,10 @@ body {
     align-items:center;
   }
 
+  p.text_home {
+    margin-top: 2rem;
+  } 
+
 }
 
   /*Adaptation - mobile*/
@@ -92,4 +98,7 @@ body {
     width: 10rem;
     height: 10rem;
  }
+  p.text_home {
+    margin-top: 1rem;
+  } 
 }
