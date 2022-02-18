@@ -8,7 +8,7 @@ body {
 }
 
 aside.left {
-  padding: 3.2rem 9.8rem 7rem 5rem;
+  padding: 3.2rem 9.8rem 7rem 9rem;
   /* background-color:blueviolet; */
   display: flex;
   flex-direction: column;
@@ -51,14 +51,14 @@ aside.right {
 }
 
 p.text_planets{
-  width: 70%;
+  width: 90%;
 }
 
 hr.planet_info{
   background-color:white;
   border: 1 solid white;
   opacity: 0.25;
-  width: 80%;
+  width: 90%;
   margin-top: 3rem;
   margin-right: 9rem;
 }
@@ -113,8 +113,8 @@ div p {
   }
   
   hr.planet_info {
-    margin-left: 6.1rem;
-    margin-right: 6.1rem;
+    margin: auto;
+    margin-top: 3.1rem;
   }
   .middle_container {
     flex-direction: column;
@@ -216,8 +216,17 @@ div p {
     flex-direction: column;
     justify-self: center;
   }
+
+  .distance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
   .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: 0rem;
     margin-bottom:0;
   }
