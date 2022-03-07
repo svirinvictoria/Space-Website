@@ -3,6 +3,7 @@ body {
   background-image: url(../images/crew/background-crew-desktop.jpg);
 }
 /* fonts - see shared.css*/
+
 /*main container*/
 .middle_container {
   display: flex;
@@ -48,7 +49,7 @@ aside.left {
 aside.right {
   height: 83vh;
   display: flex;
-  flex-basis: 45%;
+  flex-basis: 34%;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
@@ -78,6 +79,11 @@ aside.right {
 /*Adaptation - Tablet*/
 @media screen and (max-width: 1024px) {
 
+  body {
+    background-image: url(../images/crew/background-crew-tablet.jpg);
+    background-repeat: no-repeat;
+    height: 123vh;
+  }
   /*main container*/
   .middle_container {
     display: flex;
@@ -92,15 +98,26 @@ aside.right {
     padding-top: 0.5rem;
   }
   
-  section_name {
+  .section_name {
     margin-top: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4.5rem;
     align-self: flex-start;
+
+  }
+
+  .description,
+  .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .selected {
     padding: 0;
+    justify-self: center;
+    margin-bottom: 2.5rem;
   }
+  
 
   /*right side - image*/
   aside.right {
@@ -108,27 +125,43 @@ aside.right {
     justify-content: center;
   }
 
-  .img_frame{
+ 
+  /* img.img_crew{
     height: 35.7rem;
     width: 28.5rem;
-    margin-top: 2.5rem;
-  }
+  } */
 
-  img.img_crew{
+  .img_douglas{
     height: 35.7rem;
     width: 28.5rem;
   }
+  .img_victor{
+    height: 33.2rem;
+    width: 27rem;
+  }
+  .img_anousheh{
+    height: 33.7rem;
+    width: 33.2rem;
+    margin-top: 2rem;
+  }
 
+  .img_mark{
+    height: 33.2rem;
+    width: 23.05rem;
+    margin-top: 2rem;
+  }
   /*text && fonts - see shared.css*/
   
   .text_crew {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
     text-align: center;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 1.75rem 0;
     padding: 0;
     width: 60%;
+   
   }
+
 }
 
 /*Adaptaion- Mobile*/
@@ -158,7 +191,7 @@ aside.right {
     background-color: white;
     opacity: 0.25;
     border: none;
-    height: 2px;
+    height: 1px;
     width: 90%;
     margin: 0;
     padding: 0;
@@ -183,5 +216,33 @@ aside.right {
   .img_frame img {
     height: 13.8rem;
     width: 11rem;
+  }
+
+  .description{
+   flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .selected{
+    margin: 2rem 0;
+  }
+
+  .selectedSubMenu {
+  height: 0.7rem;
+  width: 0.7rem;
+}
+.unselectedSubMenu {
+  height: 0.7rem;
+  width: 0.7rem;
+  margin-right: 1.5rem;
+}
+  p.text_crew{
+    width: 90%;
+  }
+
+  .text_crew {
+    margin-bottom: 6.5rem;
+    font-size: 0.9rem;
+    line-height: 25px;
   }
 }

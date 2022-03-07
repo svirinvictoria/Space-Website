@@ -9,7 +9,6 @@ body {
 
 aside.left {
   padding: 3.2rem 9.8rem 7rem 9rem;
-  /* background-color:blueviolet; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -30,7 +29,6 @@ h5 span {
 aside.right {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   flex: 1 1 50%;
   flex-wrap: wrap;
   padding-top: 7.8rem;
@@ -119,7 +117,6 @@ div p {
   .middle_container {
     flex-direction: column;
     align-items:center
-
   }
   
   /*image*/
@@ -132,7 +129,7 @@ div p {
 
   img.img-planet{
    height: 18.7rem;
-    width: 18.7rem;
+   width: 18.7rem;
   }
   /*time && distance*/
   p.subheading_1{

@@ -10,29 +10,27 @@
       sizes="32x32"
       href="../images/favicon-32x32.png"
     />
-    <!-- <link rel="stylesheet" href="../css/planets.css"> -->
     <link rel="stylesheet" href="../css/shared.css" />
     <link rel="stylesheet" href="../css/crew.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
       rel="stylesheet"
     />
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
+
   <body>
+    <!-- upper container -->
     <div class="upper_container">
       <div class="logo">
         <img src="/images/logo.svg" alt="logo" />
       </div>
-      <hr class="central" />
+
+      <hr class="upper_menu" />
 
       <!-- hamburger menu -->
       <div id="menu_item_mob" class="menu_item" onclick="changeMenu(true)">
@@ -40,23 +38,31 @@
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+
       <!-- main menu -->
-       <nav class="nav_menue">
+      <nav class="nav_menue">
         <ul class="nav_menue_item">
           <li>
             <a class="item_link" href="/index.html"> <span>00 </span> Home</a>
           </li>
           <li>
-            <a class="item_link" href="/site-pages/destination-moon.html"><span>01 </span>Destination</a>
+            <a class="item_link" href="/site-pages/destination-moon.html"
+              ><span>01 </span>Destination</a
+            >
           </li>
-         
+
           <li>
-            <a class="item_link" href="/site-pages/crew-commander.html"
-              ><span>02 </span> Crew</a>   
+            <a
+              class="item_link underlined"
+              href="/site-pages/crew-commander.html"
+              ><span>02 </span> Crew</a
+            >
           </li>
-              
+
           <li>
-            <a class="item_link" href="/site-pages/technology-vehicle.html"><span>03 </span> Technology</a>
+            <a class="item_link" href="/site-pages/technology-vehicle.html"
+              ><span>03 </span> Technology</a
+            >
           </li>
         </ul>
       </nav>
@@ -67,39 +73,54 @@
       <!-- left part -->
       <aside class="left">
         <div class="section_name">
-          <h4><span class="selection_name_code">02</span> Meet your crew</h4>
+          <h5><span class="selection_name_code">02</span> Meet your crew</h5>
         </div>
-        <div class="job">
-          <h2>Mission Specialist</h2>
-        </div>
-        <div class="name">
-          <h1>Mark Shuttleworth</h1>
+        <hr class="crew_mobile" />
+        <div class="description">
+          <div class="bio">
+            <div class="job">
+              <h4 class="typo">Mission Specialist</h4>
+            </div>
+            <div class="distance_1"></div>
+            <div class="name">
+              <h3 class="typo">Mark Shuttleworth</h3>
+            </div>
+            <p class="text_crew">
+              Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+              the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+              African to travel to space as a space tourist.
+
+            </p>
+          </div>
+          <div class="selected">
+
+            <a href="/site-pages/crew-commander.html">
+              <div class="unselectedSubMenu"></div>
+            </a>
+
+            <a href="/site-pages/crew-specialist.html">
+              <div class="selectedSubMenu"></div>
+            </a>
+            <a href="/site-pages/crew-pilot.html">
+              <div class="unselectedSubMenu"></div>
+            </a>
+            <a href="/site-pages/crew-engineer.html">
+              <div class="unselectedSubMenu "></div>
+            </a>
+            
+          </div>
+        
         </div>
 
-        <p class="text">
-          Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
-  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
-  African to travel to space as a space tourist.
-        </p>
-
-        <div class="selected">
-          <div class="selectedSubMenu"></div>
-          <a href="/site-pages/crew-pilot.html">
-            <div class="unselectedSubMenu"></div>
-          </a>
-          <a href="/site-pages/crew-engineer.html">
-            <div class="unselectedSubMenu"></div>
-          </a>
-          <a href="/site-pages/crew-specialist.html">
-            <div class="unselectedSubMenu"></div>
-          </a>
-        </div>
-
-        <!-- right part -->
+        <!-- right part - image-->
       </aside>
       <aside class="right">
         <div class="img_frame">
-          <img src="../images/crew/image-mark-shuttleworth.png" alt="Mark Shuttleworth" />
+          <img
+            class="img_crew img_mark"
+            src="../images/crew/image-mark-shuttleworth.png"
+            alt="Hurley"
+          />
         </div>
       </aside>
     </div>

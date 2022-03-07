@@ -161,6 +161,7 @@ p.subheading_2 {
 @media screen and (max-width: 1024px) {
   .upper_container {
     padding: 0;
+    margin: 0;
   }
   .logo {
     position: absolute;
@@ -170,8 +171,7 @@ p.subheading_2 {
   .nav_menue {
     height: 4rem;
     width: 62%;
-    padding-top: 1.3rem;
-
+    padding-bottom: 0;
     font-size: 0.9rem;
     letter-spacing: 2.36px;
     line-height: 1.1rem;
@@ -208,7 +208,8 @@ p.subheading_2 {
 
   h4 {
     font-size: 1.5rem;
-    width: 90%;
+    width: 100%;
+    opacity: 0.5;
   }
 
   h5 {
@@ -242,6 +243,10 @@ p.subheading_2 {
     line-height: 4rem;
     margin-bottom: 1rem;
     text-align: center;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 27.5px;
   }
 
   h4 {
