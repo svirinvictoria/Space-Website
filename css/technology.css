@@ -171,6 +171,7 @@ body {
     display: block;
     background-size: cover;
     width: 64rem;
+    height: 10.6rem;
       
   }
   .img-desk {
@@ -227,6 +228,8 @@ body {
   .SubMenu{
      height: 2.5rem;
      width: 2.5rem;
+     font-size: 1rem;
+     line-height: 1.2rem;
   }
   .selected {
     width: 35%;
@@ -257,5 +260,7 @@ body {
       text-align: center;
       font-weight: 300;
       letter-spacing: 1;
+      font-size: 0.9rem;
+      line-height: 25px;
   }
 }
