@@ -1,0 +1,248 @@
+html,
+body {
+  background-image: url(../images/crew/background-crew-desktop.jpg);
+}
+/* fonts - see shared.css*/
+
+/*main container*/
+.middle_container {
+  display: flex;
+  margin-left: 9rem;
+  align-items: center;
+}
+
+/*left part*/
+aside.left {
+  flex-basis: 55%;
+  height: 48.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section_name {
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+.selection_name_code {
+  color: #fff;
+  opacity: 0.25;
+}
+
+.text_crew {
+  width: 85%;
+  font-family:"Barlow", sans-serif;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  margin-bottom: 7.5rem;
+  margin-top: 1.65rem;
+}
+
+
+.serial_number {
+  width: 30%;
+  display: flex;
+}
+
+/*right part*/
+aside.right {
+  height: 83vh;
+  display: flex;
+  flex-basis: 34%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.selected {
+  display: flex;
+  padding-bottom: 5.85rem;
+}
+
+.selectedSubMenu {
+  background-color: #fff;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+.unselectedSubMenu {
+  background-color: #fff;
+  opacity: 0.25;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+/*Adaptation - Tablet*/
+@media screen and (max-width: 1024px) {
+
+  body {
+    background-image: url(../images/crew/background-crew-tablet.jpg);
+    background-repeat: no-repeat;
+    height: 123vh;
+  }
+  /*main container*/
+  .middle_container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.4rem;
+  }
+
+  /* left side- text */
+  aside.left {
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+  }
+  
+  .section_name {
+    margin-top: 2.5rem;
+    margin-bottom: 4.5rem;
+    align-self: flex-start;
+
+  }
+
+  .description,
+  .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .selected {
+    padding: 0;
+    justify-self: center;
+    margin-bottom: 2.5rem;
+  }
+  
+
+  /*right side - image*/
+  aside.right {
+    display: flex;
+    justify-content: center;
+  }
+
+ 
+  /* img.img_crew{
+    height: 35.7rem;
+    width: 28.5rem;
+  } */
+
+  .img_douglas{
+    height: 35.7rem;
+    width: 28.5rem;
+  }
+  .img_victor{
+    height: 33.2rem;
+    width: 27rem;
+  }
+  .img_anousheh{
+    height: 33.7rem;
+    width: 33.2rem;
+    margin-top: 2rem;
+  }
+
+  .img_mark{
+    height: 33.2rem;
+    width: 23.05rem;
+    margin-top: 2rem;
+  }
+  /*text && fonts - see shared.css*/
+  
+  .text_crew {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    text-align: center;
+    margin: 1rem 0 1.75rem 0;
+    padding: 0;
+    width: 60%;
+   
+  }
+
+}
+
+/*Adaptaion- Mobile*/
+@media screen and (max-width: 600px) {
+  body {
+    position: relative;
+  }
+  aside.left {
+    padding: 0;
+  }
+  .job {
+    width: 100%;
+    text-align: center;
+  }
+  .name {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section_name {
+   position: absolute;
+   top:2rem; 
+   left: 33%;
+  }
+
+  hr.crew_mobile {
+    background-color: white;
+    opacity: 0.25;
+    border: none;
+    height: 1px;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav_menue {
+    top: +100%;
+  }
+
+  .middle_container {
+    flex-direction: column-reverse;
+    margin-right: 2.4rem;
+  }
+
+  .img_frame {
+    height: 13.8rem;
+    width: 11rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img_frame img {
+    height: 13.8rem;
+    width: 11rem;
+  }
+
+  .description{
+   flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .selected{
+    margin: 2rem 0;
+  }
+
+  .selectedSubMenu {
+  height: 0.7rem;
+  width: 0.7rem;
+}
+.unselectedSubMenu {
+  height: 0.7rem;
+  width: 0.7rem;
+  margin-right: 1.5rem;
+}
+  p.text_crew{
+    width: 90%;
+  }
+
+  .text_crew {
+    margin-bottom: 6.5rem;
+    font-size: 0.9rem;
+    line-height: 25px;
+  }
+}
