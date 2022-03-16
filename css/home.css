@@ -1,5 +1,5 @@
 body {
-  background-image:url("../images/home-img/background-home-desktop.jpg");
+  background-image: url("../images/home-img/background-home-desktop.jpg");
 }
 
 .middle_container {
@@ -29,7 +29,7 @@ body {
 
   width: 15rem;
   height: 15rem;
-  border-radius: 50%; 
+  border-radius: 50%;
 
   display: flex;
   flex-direction: column;
@@ -42,63 +42,61 @@ body {
   width: 90%;
 }
 
-  /*Adaptation- Tablet*/
+/*Adaptation- Tablet*/
 @media screen and (max-width: 1024px) {
-  body{
-    background-image: url(../images/home-img/background-home-tablet.jpg)
+  body {
+    background-image: url(../images/home-img/background-home-tablet.jpg);
   }
- 
+
   hr {
     display: none;
   }
 
   .middle_container {
-     flex-direction: column;
-     margin: 9.9rem 6.6rem 9.9rem 5.6rem;
-     padding: 0;
-     display: flex;
-  }   
-     
-  .right_part{
+    flex-direction: column;
+    margin: 9.9rem 6.6rem 9.9rem 5.6rem;
+    padding: 0;
+    display: flex;
+  }
+
+  .right_part {
     padding: 0;
     margin-top: 12.75rem;
   }
-  .left_part{
+  .left_part {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
   }
 
   p.text_home {
     margin-top: 2rem;
-  } 
-
+  }
 }
 
-  /*Adaptation - mobile*/
+/*Adaptation - mobile*/
 @media screen and (max-width: 600px) {
-
-  body{
+  body {
     margin: 0;
-    background-image: url(../images/home-img/background-home-mobile.jpg)
+    background-image: url(../images/home-img/background-home-mobile.jpg);
   }
-  .middle_container{
+  .middle_container {
     padding: 0rem;
     margin: 1.5rem 3rem 1.5rem 3rem;
   }
- 
-  .left_part{
+
+  .left_part {
     margin-top: 3rem;
     margin-bottom: 5rem;
   }
-  
- .explore_text {
+
+  .explore_text {
     width: 10rem;
     height: 10rem;
- }
+  }
   p.text_home {
     margin-top: 1rem;
-  } 
+  }
 }
