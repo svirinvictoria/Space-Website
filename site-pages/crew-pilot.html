@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../css/shared.css" />
+    <link rel="stylesheet" href="../css/crew.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+
+  <body>
+    <!-- upper container -->
+    <div class="upper_container">
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo" />
+      </div>
+
+      <hr class="upper_menu" />
+
+      <!-- hamburger menu -->
+      <div id="menu_item_mob" class="menu_item" onclick="changeMenu(true)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <!-- main menu -->
+      <nav class="nav_menue">
+        <ul class="nav_menue_item">
+          <li>
+            <a class="item_link" href="/index.html"> <span>00 </span> Home</a>
+          </li>
+          <li>
+            <a class="item_link" href="/site-pages/destination-moon.html"
+              ><span>01 </span>Destination</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="item_link underlined"
+              href="/site-pages/crew-commander.html"
+              ><span>02 </span> Crew</a
+            >
+          </li>
+
+          <li>
+            <a class="item_link" href="/site-pages/technology-vehicle.html"
+              ><span>03 </span> Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- middle container -->
+    <div class="middle_container">
+      <!-- left part -->
+      <aside class="left">
+        <div class="section_name">
+          <h5><span class="selection_name_code">02</span> Meet your crew</h5>
+        </div>
+        <hr class="crew_mobile" />
+        <div class="description">
+          <div class="bio">
+            <div class="job">
+              <h4 class="typo">Pilot</h4>
+            </div>
+            <div class="distance_1"></div>
+            <div class="name">
+              <h3 class="typo">Victor Glover</h3>
+            </div>
+            <p class="text_crew">
+              Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+  International Space Station. Glover is a commander in the U.S. Navy where 
+  he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+  station systems flight engineer. 
+
+            </p>
+          </div>
+          <div class="selected">
+
+            <a href="/site-pages/crew-commander.html">
+              <div class="unselectedSubMenu"></div>
+            </a>
+
+            <a href="/site-pages/crew-specialist.html">
+              <div class="unselectedSubMenu"></div>
+            </a>
+            <a href="/site-pages/crew-pilot.html">
+              <div class="selectedSubMenu"></div>
+            </a>
+            <a href="/site-pages/crew-engineer.html">
+              <div class="unselectedSubMenu "></div>
+            </a>
+            
+          </div>
+        
+        </div>
+
+        <!-- right part - image-->
+      </aside>
+      <aside class="right">
+        <div class="img_frame">
+          <img
+            class="img_crew img_victor"
+            src="../images/crew/image-victor-glover.png"
+            alt="Hurley"
+          />
+        </div>
+      </aside>
+    </div>
+
+    <div id="mmp" class="mobile_menu_panel">
+      <button class="mmp_btn" onclick="changeMenu(false)">X</button>
+
+      <!-- mobile menu -->
+      <nav class="mob_menu">
+        <ul class="mob_menu_item">
+          <li>
+            <a class="item_link" href="../index.html">
+              <span> 00 </span> Home</a
+            >
+          </li>
+          <li>
+            <a class="item_link" href="/site-pages/destination-moon.html">
+              <span> 01 </span>Destination</a
+            >
+          </li>
+          <li>
+            <a class="item_link" href="/site-pages/crew-commander.html"
+              ><span> 02 </span> Crew</a
+            >
+          </li>
+          <li>
+            <a class="item_link" href="#"><span> 03 </span> Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script>
+      function changeMenu(toShow) {
+        if (toShow) {
+          document.getElementById("menu_item_mob").style.display = "none";
+        } else {
+          document.getElementById("menu_item_mob").style.display = "block";
+        }
+        const element = document.getElementById("mmp");
+        element.classList.remove("show", "hide");
+        const className = toShow ? "show" : "hide";
+        element.classList.add(className);
+      }
+    </script>
+  </body>
+</html>
