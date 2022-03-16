@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,13 +8,17 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../images/favicon-32x32.png">
-    <link rel="stylesheet" href="../css/planets.css">
-    <link rel="stylesheet" href="../css/shared.css">
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../css/planets.css" />
+    <link rel="stylesheet" href="../css/shared.css" />
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -27,127 +30,137 @@
         <img src="images/logo.svg" alt="logo" />
       </div>
 
-      <hr class="upper_menu">
+      <hr class="upper_menu" />
 
       <!-- hamburger menu -->
-    <div id="menu_item_mob" class="menu_item" onclick="changeMenu(true)">
+      <div id="menu_item_mob" class="menu_item" onclick="changeMenu(true)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
-    </div>
+      </div>
 
       <!-- main menu -->
-    <nav class="nav_menue">
+      <nav class="nav_menue">
         <ul class="nav_menue_item">
           <li>
-            <a class="item_link" href="/index.html"> <span>00 </span> Home</a>
+            <a class="item_link" href="index.html"> <span>00 </span> Home</a>
           </li>
           <li>
-            <a class="item_link underlined" href="/site-pages/destination-moon.html"><span>01 </span>Destination</a>
+            <a class="item_link underlined" href="destination-moon.html"
+              ><span>01 </span>Destination</a
+            >
           </li>
-         
+
           <li>
-            <a class="item_link" href="/site-pages/crew-commander.html"
-              ><span>02 </span> Crew</a>   
+            <a class="item_link" href="crew-commander.html"
+              ><span>02 </span> Crew</a
+            >
           </li>
-              
+
           <li>
-            <a class="item_link" href="/site-pages/technology-vehicle.html"><span>03 </span> Technology</a>
+            <a class="item_link" href="technology-vehicle.html"
+              ><span>03 </span> Technology</a
+            >
           </li>
         </ul>
       </nav>
     </div>
 
-
     <div class="middle_container">
       <aside class="left">
-        <h5>  <span>01 </span>  Pick your destination</h5>
+        <h5><span>01 </span> Pick your destination</h5>
         <div class="img-data">
-          <img class="img-planet"
+          <img
+            class="img-planet"
             src="../images/destination/image-europa.png"
-            alt="Moon">
-        
+            alt="Moon"
+          />
         </div>
       </aside>
 
       <aside class="right">
         <div class="pick">
-        <a href="/site-pages/destination-moon.html"><div  class="choose_planet ">Moon</div></a>
-        
-        <a href="/site-pages/destination-mars.html"><div class="choose_planet">Mars</div></a>
+          <a href="destination-moon.html"
+            ><div class="choose_planet">Moon</div></a
+          >
 
-        <a href="/site-pages/destination-europa.html"><div class="choose_planet underlined">Europa</div></a>
-        
-        <a href="/site-pages/destination-titan.html"><div class="choose_planet">Titan</div></a>
-        
-      </div>
+          <a href="destination-mars.html"
+            ><div class="choose_planet">Mars</div></a
+          >
+
+          <a href="destination-europa.html"
+            ><div class="choose_planet underlined">Europa</div></a
+          >
+
+          <a href="destination-titan.html"
+            ><div class="choose_planet">Titan</div></a
+          >
+        </div>
 
         <h1 class="typo">Europa</h1>
         <p class="text text_planets">
-           The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
-          winter lover’s dream. With an icy surface, it’s perfect for a bit of 
-          ice skating, curling, hockey, or simple relaxation in your snug 
+          The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+          winter lover’s dream. With an icy surface, it’s perfect for a bit of
+          ice skating, curling, hockey, or simple relaxation in your snug
           wintery cabin.
         </p>
 
-        <hr class="planet_info">
-
+        <hr class="planet_info" />
 
         <div class="travel_info">
           <div class="distance">
             <p class="subheading_1">Avg. distance</p>
-            <p class="subheading_2"> 628 mil. km</p>
+            <p class="subheading_2">628 mil. km</p>
           </div>
           <div class="time">
             <p class="subheading_1">Est. travel time</p>
-            <p class="subheading_2"> 3 years </p>
+            <p class="subheading_2">3 years</p>
           </div>
         </div>
-        
       </aside>
-
     </div>
 
-<!-- menu button -->
-  <div id="mmp" class="mobile_menu_panel">
-    <button class="mmp_btn" onclick="changeMenu(false)">X</button>
+    <!-- menu button -->
+    <div id="mmp" class="mobile_menu_panel">
+      <button class="mmp_btn" onclick="changeMenu(false)">X</button>
 
-    <!-- mobile menu -->
-    <nav class="mob_menu">
-      <ul class="mob_menu_item">
-        <li>
-          <a class="item_link" href="../index.html"> <span> 00 </span> Home</a>
-        </li>
-        <li>
-          <a class="item_link" href="/site-pages/destination-moon.html">
-            <span> 01 </span>Destination</a
-          >
-        </li>
-        <li>
-          <a class="item_link" href="/site-pages/crew-commander.html"
-            ><span> 02 </span> Crew</a
-          >
-        </li>
-        <li>
-          <a class="item_link" href="#"><span> 03 </span> Technology</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+      <!-- mobile menu -->
+      <nav class="mob_menu">
+        <ul class="mob_menu_item">
+          <li>
+            <a class="item_link" href="../index.html">
+              <span> 00 </span> Home</a
+            >
+          </li>
+          <li>
+            <a class="item_link" href="destination-moon.html">
+              <span> 01 </span>Destination</a
+            >
+          </li>
+          <li>
+            <a class="item_link" href="crew-commander.html"
+              ><span> 02 </span> Crew</a
+            >
+          </li>
+          <li>
+            <a class="item_link" href="#"><span> 03 </span> Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-  <script>
-    function changeMenu(toShow) {
-      if (toShow) {
-        document.getElementById("menu_item_mob").style.display = "none";
-      } else {
-        document.getElementById("menu_item_mob").style.display = "block";
+    <script>
+      function changeMenu(toShow) {
+        if (toShow) {
+          document.getElementById("menu_item_mob").style.display = "none";
+        } else {
+          document.getElementById("menu_item_mob").style.display = "block";
+        }
+        const element = document.getElementById("mmp");
+        element.classList.remove("show", "hide");
+        const className = toShow ? "show" : "hide";
+        element.classList.add(className);
       }
-      const element = document.getElementById("mmp");
-      element.classList.remove("show", "hide");
-      const className = toShow ? "show" : "hide";
-      element.classList.add(className);
-    }
-  </script>
-
+    </script>
   </body>
 </html>
